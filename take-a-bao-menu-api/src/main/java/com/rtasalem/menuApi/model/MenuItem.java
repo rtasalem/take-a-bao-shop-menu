@@ -1,12 +1,10 @@
 package com.rtasalem.menuApi.model;
 
-import jakarta.persistence.Column;
 import jakarta.persistence.Entity;
 import jakarta.persistence.GeneratedValue;
 import jakarta.persistence.GenerationType;
 import jakarta.persistence.Id;
 import jakarta.persistence.SequenceGenerator;
-import jakarta.persistence.Table;
 import jakarta.validation.constraints.DecimalMax;
 import jakarta.validation.constraints.DecimalMin;
 import jakarta.validation.constraints.NotBlank;
@@ -15,24 +13,24 @@ import jakarta.validation.constraints.Size;
 
 @Entity
 public class MenuItem {
-	
+
 	@Id
 	@SequenceGenerator(name = "ITEM_ID_GEN", sequenceName = "ITEM_ID_SEQ", allocationSize = 1)
 	@GeneratedValue(strategy = GenerationType.SEQUENCE, generator = "ITEM_ID_GEN")
 	private int itemId;
-	
+
 	@NotBlank(message = "Menu item name must not be left blank.")
 	@Size(min = 2, max = 25, message = "Menu item name must be greater than 2 characters and less than 25 characters.")
 	private String itemName;
-	
+
 	@NotBlank(message = "Menu item description must not be left blank.")
 	@Size(min = 10, max = 150, message = "Menu item description must be greater than 10 characters and less than 150 characters.")
 	private String itemDescription;
-	
+
 	@DecimalMax(value = "20.00", message = "Menu item price must be less than £20.00 (GBP).")
 	@DecimalMin(value = "1.50", message = "Menu item price must be greater than £1.50 (GBP).")
 	private double itemPrice;
-	
+
 	@NotNull(message = "It must be confirmed whether or not a menu item is suitable for vegetarians.")
 	private boolean suitableForVegetarians;
 
