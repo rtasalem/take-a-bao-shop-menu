@@ -7,6 +7,7 @@ import org.springframework.http.HttpStatus;
 import org.springframework.http.ResponseEntity;
 import org.springframework.web.bind.annotation.CrossOrigin;
 import org.springframework.web.bind.annotation.GetMapping;
+import org.springframework.web.bind.annotation.PathVariable;
 import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RestController;
 
@@ -29,6 +30,11 @@ public class MenuItemController {
 	@GetMapping
 	public ResponseEntity<List<MenuItem>> getAllMenuItems() {
 		return ResponseEntity.status(HttpStatus.OK).body(menuItemService.findAllMenuItems());
+	}
+
+	@GetMapping("/{itemId}")
+	public ResponseEntity<MenuItem> getMenuItemById(@PathVariable int itemId) {
+		return ResponseEntity.status(HttpStatus.OK).body(menuItemService.findMenuItemById(itemId));
 	}
 
 }
