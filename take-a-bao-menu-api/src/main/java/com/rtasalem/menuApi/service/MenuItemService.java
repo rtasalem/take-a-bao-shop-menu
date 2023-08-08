@@ -54,4 +54,12 @@ public class MenuItemService {
 				() -> new ResourceNotFoundException("Menu item with ID of " + itemId + " does not exist."));
 		return menuItemRepo.save(exisitingMenuItem);
 	}
+
+	public void removeMenuItemById(int itemId) {
+
+		if (!menuItemRepo.existsById(itemId)) {
+			throw new ResourceNotFoundException("Menu item with ID of " + itemId + " does not exist.");
+		}
+
+	}
 }
