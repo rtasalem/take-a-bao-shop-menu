@@ -9,6 +9,7 @@ import org.springframework.web.bind.annotation.CrossOrigin;
 import org.springframework.web.bind.annotation.GetMapping;
 import org.springframework.web.bind.annotation.PathVariable;
 import org.springframework.web.bind.annotation.PostMapping;
+import org.springframework.web.bind.annotation.PutMapping;
 import org.springframework.web.bind.annotation.RequestBody;
 import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RestController;
@@ -47,6 +48,11 @@ public class MenuItemController {
 		URI location = ServletUriComponentsBuilder.fromCurrentRequest().path("/{id}")
 				.buildAndExpand(menuItem.getItemId()).toUri();
 		return ResponseEntity.created(location).body(menuItem);
+	}
+
+	@PutMapping("/{id}")
+	public ResponseEntity<MenuItem> updateMenuItem(@PathVariable int itemId, @Valid @RequestBody MenuItem menuItem) {
+		return ResponseEntity.ok(menuItemService.editMenuItem(menuItem, itemId));
 	}
 
 }

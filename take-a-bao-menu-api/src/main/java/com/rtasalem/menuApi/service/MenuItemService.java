@@ -28,7 +28,7 @@ public class MenuItemService {
 
 		Optional<MenuItem> menuItemOpt = menuItemRepo.findById(itemId);
 		if (menuItemOpt.isEmpty()) {
-			throw new ResourceNotFoundException("Menu item with an ID of " + itemId + " not found in the database.");
+			throw new ResourceNotFoundException("Menu item with an ID of " + itemId + " does not exist.");
 		}
 		return menuItemOpt.get();
 	}
@@ -48,4 +48,10 @@ public class MenuItemService {
 		return menuItemRepo.save(menuItem);
 	}
 
+	public MenuItem editMenuItem(MenuItem menuItem, int itemId) {
+
+		MenuItem exisitingMenuItem = menuItemRepo.findById(itemId).orElseThrow(
+				() -> new ResourceNotFoundException("Menu item with ID of " + itemId + " does not exist."));
+		return menuItemRepo.save(exisitingMenuItem);
+	}
 }
