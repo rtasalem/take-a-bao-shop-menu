@@ -5,6 +5,7 @@ import java.util.Optional;
 
 import org.springframework.stereotype.Service;
 
+import com.rtasalem.menuApi.exception.MenuItemNameExistsException;
 import com.rtasalem.menuApi.exception.ResourceNotFoundException;
 import com.rtasalem.menuApi.model.MenuItem;
 import com.rtasalem.menuApi.repository.MenuItemRepository;
@@ -30,6 +31,21 @@ public class MenuItemService {
 			throw new ResourceNotFoundException("Menu item with an ID of " + itemId + " not found in the database.");
 		}
 		return menuItemOpt.get();
+	}
+
+	public MenuItem createMenuItem(MenuItem menuItem) {
+
+		if (menuItemRepo.existsByItemName(menuItem.getItemName())) {
+			throw new MenuItemNameExistsException(
+					"A menu item with the name of " + menuItem.getItemName() + " already exists.");
+		}
+		if (menuItem.getItemName().isBlank() || menuItem.getItemName().isEmpty()) {
+			throw new RuntimeException("Menu item name must not be left blank.");
+		}
+		if (menuItem.getItemDescription().isBlank() || menuItem.getItemDescription().isEmpty()) {
+			throw new RuntimeException("Menu item description must not be left blank.");
+		}
+		return menuItemRepo.save(menuItem);
 	}
 
 }

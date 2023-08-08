@@ -6,4 +6,6 @@ import com.rtasalem.menuApi.model.MenuItem;
 
 public interface MenuItemRepository extends JpaRepository<MenuItem, Integer> {
 
+	boolean existsByItemName(String itemName);
+
 }
