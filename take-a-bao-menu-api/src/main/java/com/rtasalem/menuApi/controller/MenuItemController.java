@@ -13,6 +13,7 @@ import org.springframework.web.bind.annotation.PutMapping;
 import org.springframework.web.bind.annotation.RequestBody;
 import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RestController;
+import org.springframework.web.service.annotation.DeleteExchange;
 import org.springframework.web.servlet.support.ServletUriComponentsBuilder;
 
 import com.rtasalem.menuApi.model.MenuItem;
@@ -53,6 +54,12 @@ public class MenuItemController {
 	@PutMapping("/{id}")
 	public ResponseEntity<MenuItem> updateMenuItem(@PathVariable int itemId, @Valid @RequestBody MenuItem menuItem) {
 		return ResponseEntity.ok(menuItemService.editMenuItem(menuItem, itemId));
+	}
+
+	@DeleteExchange("/{id}")
+	public ResponseEntity<Void> deleteMenuItem(@PathVariable int itemId) {
+		menuItemService.removeMenuItemById(itemId);
+		return ResponseEntity.status(HttpStatus.OK).build();
 	}
 
 }
