@@ -50,9 +50,11 @@ public class MenuItemService {
 
 	public MenuItem editMenuItem(MenuItem menuItem, int itemId) {
 
-		MenuItem exisitingMenuItem = menuItemRepo.findById(itemId).orElseThrow(
-				() -> new ResourceNotFoundException("Menu item with ID of " + itemId + " does not exist."));
-		return menuItemRepo.save(exisitingMenuItem);
+		if (!menuItemRepo.existsById(itemId)) {
+			throw new ResourceNotFoundException("Menu item with ID of " + itemId + " does not exist.");
+		}
+		menuItem.setItemId(itemId);
+		return menuItemRepo.save(menuItem);
 	}
 
 	public void removeMenuItemById(int itemId) {
@@ -60,6 +62,6 @@ public class MenuItemService {
 		if (!menuItemRepo.existsById(itemId)) {
 			throw new ResourceNotFoundException("Menu item with ID of " + itemId + " does not exist.");
 		}
-
+		menuItemRepo.deleteById(itemId);
 	}
 }

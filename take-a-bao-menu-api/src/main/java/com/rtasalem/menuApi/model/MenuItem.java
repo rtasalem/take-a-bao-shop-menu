@@ -8,7 +8,6 @@ import jakarta.persistence.SequenceGenerator;
 import jakarta.validation.constraints.DecimalMax;
 import jakarta.validation.constraints.DecimalMin;
 import jakarta.validation.constraints.NotBlank;
-import jakarta.validation.constraints.NotNull;
 import jakarta.validation.constraints.Size;
 
 @Entity
@@ -31,18 +30,13 @@ public class MenuItem {
 	@DecimalMin(value = "1.50", message = "Menu item price must be greater than £1.50 (GBP).")
 	private double itemPrice;
 
-	@NotNull(message = "It must be confirmed whether or not a menu item is suitable for vegetarians.")
 	private boolean suitableForVegetarians;
 
 	public MenuItem() {
 		super();
 	}
 
-	public MenuItem(
-			@NotBlank(message = "Menu item name must not be left blank.") @Size(min = 2, max = 25, message = "Menu item name must be greater than 2 characters and less than 25 characters.") String itemName,
-			@NotBlank(message = "Menu item description must not be left blank.") @Size(min = 10, max = 150, message = "Menu item description must be greater than 10 characters and less than 150 characters.") String itemDescription,
-			@DecimalMax(value = "20.00", message = "Menu item price must be less than £20.00 (GBP).") @DecimalMin(value = "1.50", message = "Menu item price must be greater than £1.50 (GBP).") double itemPrice,
-			@NotNull(message = "It must be confirmed whether or not a menu item is suitable for vegetarians.") boolean suitableForVegetarians) {
+	public MenuItem(String itemName, String itemDescription, double itemPrice, boolean suitableForVegetarians) {
 		super();
 		this.itemName = itemName;
 		this.itemDescription = itemDescription;
