@@ -51,12 +51,12 @@ public class MenuItemController {
 		return ResponseEntity.created(location).body(menuItem);
 	}
 
-	@PutMapping("/{id}")
+	@PutMapping("/{itemId}")
 	public ResponseEntity<MenuItem> updateMenuItem(@PathVariable int itemId, @Valid @RequestBody MenuItem menuItem) {
 		return ResponseEntity.ok(menuItemService.editMenuItem(menuItem, itemId));
 	}
 
-	@DeleteExchange("/{id}")
+	@DeleteExchange("/{itemId}")
 	public ResponseEntity<Void> deleteMenuItem(@PathVariable int itemId) {
 		menuItemService.removeMenuItemById(itemId);
 		return ResponseEntity.status(HttpStatus.OK).build();
