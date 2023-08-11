@@ -1,4 +1,6 @@
 # Take A Bao: Shop Menu 👩🏻‍🍳
+### PROJECT STATUS
+As of 11 August 2023: WORK IN PROGRESS
 ### Acknowledgements
 Full credit and a massive thank you for the inspiration behind this project (and that includes the genius name: _Take A Bao_) goes to my very talented close friend, Claire H. I dedicate this project to her in the hopes that I'll get a lifetime discount on her homemade bao.
 ## Background
