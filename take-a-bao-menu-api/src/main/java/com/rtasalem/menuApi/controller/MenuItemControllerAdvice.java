@@ -29,7 +29,7 @@ public class MenuItemControllerAdvice {
 	public ResponseEntity<String> handleMethodArgumetnNotValidException(MethodArgumentNotValidException ex) {
 		List<ObjectError> errors = ex.getAllErrors();
 		StringBuilder stringBuilder = new StringBuilder();
-		errors.forEach(error -> stringBuilder.append(error.getDefaultMessage() + " - "));
+		errors.forEach(error -> stringBuilder.append(error.getDefaultMessage() + " / "));
 		return ResponseEntity.status(HttpStatus.BAD_REQUEST).body(stringBuilder.toString());
 	}
 

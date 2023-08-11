@@ -6,6 +6,7 @@ import java.util.List;
 import org.springframework.http.HttpStatus;
 import org.springframework.http.ResponseEntity;
 import org.springframework.web.bind.annotation.CrossOrigin;
+import org.springframework.web.bind.annotation.DeleteMapping;
 import org.springframework.web.bind.annotation.GetMapping;
 import org.springframework.web.bind.annotation.PathVariable;
 import org.springframework.web.bind.annotation.PostMapping;
@@ -13,7 +14,6 @@ import org.springframework.web.bind.annotation.PutMapping;
 import org.springframework.web.bind.annotation.RequestBody;
 import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RestController;
-import org.springframework.web.service.annotation.DeleteExchange;
 import org.springframework.web.servlet.support.ServletUriComponentsBuilder;
 
 import com.rtasalem.menuApi.model.MenuItem;
@@ -46,7 +46,7 @@ public class MenuItemController {
 	@PostMapping
 	public ResponseEntity<MenuItem> addNewMenuItem(@Valid @RequestBody MenuItem menuItem) {
 		menuItemService.createMenuItem(menuItem);
-		URI location = ServletUriComponentsBuilder.fromCurrentRequest().path("/{id}")
+		URI location = ServletUriComponentsBuilder.fromCurrentRequest().path("/{itemId}")
 				.buildAndExpand(menuItem.getItemId()).toUri();
 		return ResponseEntity.created(location).body(menuItem);
 	}
@@ -56,7 +56,7 @@ public class MenuItemController {
 		return ResponseEntity.ok(menuItemService.editMenuItem(menuItem, itemId));
 	}
 
-	@DeleteExchange("/{itemId}")
+	@DeleteMapping("/{itemId}")
 	public ResponseEntity<Void> deleteMenuItem(@PathVariable int itemId) {
 		menuItemService.removeMenuItemById(itemId);
 		return ResponseEntity.status(HttpStatus.OK).build();
