@@ -1,0 +1,66 @@
+/* header.css */
+
+/* colour palette: sourced from coolors.co (https://coolors.co/fe5d26-f2c078-faedca-c1dbb3-7ebc89) */
+:root {
+    --dutchwhite: #FAEDCA;
+    --earthyellow: #F2C078;
+    --giantsorange: #FE5D26;
+    --teagreen: #C1DBB3;
+    --emerald: #7EBC89;
+}
+
+/* styling for the navbar */
+.bg-body-tertiary {
+    background-color: var(--dutchwhite);
+}
+
+/* styling for the navbar brand */
+.navbar-brand {
+    font-size: 5rem;
+    font-weight: bold;
+    font-family: 'Mr Dafoe', cursive;
+    color: var(--earthyellow);
+    text-decoration: none;
+}
+
+/* still deciding if this should be kept in */
+/* .navbar-brand:hover {
+    color: var(--giantsorange);
+} */
+
+/* styling for the navbar links */
+.me-auto .my-2.my-lg-0 .nav-link {
+    color: var(--emerald);
+    font-size: 1rem;
+    margin-right: 0.5rem;
+    transition: color 0.3s ease;
+    text-decoration-line: none;
+}
+
+.me-auto .my-2.my-lg-0 .nav-link:hover {
+    color: #0d6efd;
+    /* Blue color on hover */
+}
+
+/* Style the Search Form */
+.form-control {
+    border-color: #ced4da;
+    /* Light gray border color */
+    color: #495057;
+    /* Dark gray text color */
+}
+
+/* Style the Search Button */
+.btn-outline-success {
+    color: #198754;
+    /* Green text color */
+    border-color: #198754;
+    /* Green border color */
+}
+
+.btn-outline-success:hover {
+    background-color: #198754;
+    /* Green background color on hover */
+    color: #fff;
+    /* White text color on hover */
+}
