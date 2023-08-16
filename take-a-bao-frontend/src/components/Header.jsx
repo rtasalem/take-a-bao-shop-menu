@@ -4,7 +4,7 @@ import Form from "react-bootstrap/Form";
 import Nav from "react-bootstrap/Nav";
 import Navbar from "react-bootstrap/Navbar";
 import NavDropdown from "react-bootstrap/NavDropdown";
-import "../styles/Header.css";
+import "bootstrap/dist/css/bootstrap.min.css";
 
 const Header = () => {
   return (
@@ -24,7 +24,7 @@ const Header = () => {
             style={{ maxHeight: "100px" }}
             navbarScroll
           >
-            <Nav.Link href="#action1">About</Nav.Link>
+            <Nav.Link href="/about-us">About Us</Nav.Link>
             <Nav.Link
               href="https://www.instagram.com/_takeabao/"
               target="_blank"

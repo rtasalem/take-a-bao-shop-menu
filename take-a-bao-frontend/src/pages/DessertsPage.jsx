@@ -1,7 +1,9 @@
 const DessertsPage = () => {
-    return (
-        <h1>desserts page</h1>
-    );
-}
+  return (
+    <div>
+      <h1>desserts page</h1>
+    </div>
+  );
+};
 
 export default DessertsPage;
