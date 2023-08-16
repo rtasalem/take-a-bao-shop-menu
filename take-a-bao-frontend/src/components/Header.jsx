@@ -19,18 +19,6 @@ const Header = () => {
             navbarScroll
           >
             <Nav.Link href="/about-us">About Us</Nav.Link>
-            <Nav.Link
-              href="https://www.instagram.com/_takeabao/"
-              target="_blank"
-            >
-              Instagram
-            </Nav.Link>
-            <Nav.Link
-              href="https://www.justgiving.com/crowdfunding/TakeaBao?utm_term=z2xyP8dk5"
-              target="_blank"
-            >
-              Just Giving
-            </Nav.Link>
             <NavDropdown title="Menu" id="navbarScrollingDropdown">
               <NavDropdown.Item href="/baozi">Baozi</NavDropdown.Item>
               <NavDropdown.Item href="/sides">Sides</NavDropdown.Item>
@@ -41,7 +29,7 @@ const Header = () => {
           <Form className="d-flex">
             <Form.Control
               type="search"
-              placeholder="Search our menu!"
+              placeholder="Have a look around!"
               className="me-2"
               aria-label="Search"
             />
