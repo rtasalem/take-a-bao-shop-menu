@@ -7,7 +7,7 @@ import BaoziPage from './pages/BaoziPage';
 import SidesPage from './pages/SidesPage';
 import DessertsPage from './pages/DessertsPage';
 import DrinksPage from './pages/DrinksPage';
-import Footer from './components/Footer';
+// import Footer from './components/Footer';
 
 function App() {
   return (
@@ -21,7 +21,7 @@ function App() {
         <Route path='/desserts' element={<DessertsPage />} />
         <Route path='/drinks' element={<DrinksPage />} />
       </Routes>
-      <Footer />
+      {/* <Footer /> */}
     </div>
   );
 }
