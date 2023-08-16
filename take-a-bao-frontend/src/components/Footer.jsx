@@ -1,6 +1,8 @@
+import "../styles/Footer.css";
+
 const Footer = () => {
   return (
-    <div>
+    <div class="footer">
       <ul class="nav justify-content-end">
         <li class="nav-item">
           <a
