@@ -24,7 +24,7 @@ const Header = () => {
             style={{ maxHeight: "100px" }}
             navbarScroll
           >
-            <Nav.Link href="#action1">About</Nav.Link>
+            <Nav.Link href="/about-us">About Us</Nav.Link>
             <Nav.Link
               href="https://www.instagram.com/_takeabao/"
               target="_blank"
