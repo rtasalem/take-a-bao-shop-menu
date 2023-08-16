@@ -1,7 +1,8 @@
 const BaoziPage = () => {
-    return (
-        <h1>Baozi page</h1>
-    );
-}
-
+  return (
+    <div>
+      <h1>baozi page</h1>
+    </div>
+  );
+};
 export default BaoziPage;

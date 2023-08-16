@@ -1,7 +1,8 @@
 const DrinksPage = () => {
-    return (
-        <h1>drinks page</h1>
-    );
-}
-
+  return (
+    <div>
+      <h1>drinks page</h1>
+    </div>
+  );
+};
 export default DrinksPage;

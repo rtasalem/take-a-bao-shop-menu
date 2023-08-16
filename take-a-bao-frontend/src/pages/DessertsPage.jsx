@@ -5,5 +5,4 @@ const DessertsPage = () => {
     </div>
   );
 };
-
 export default DessertsPage;
