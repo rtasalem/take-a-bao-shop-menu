@@ -1,7 +1,29 @@
 const Footer = () => {
   return (
     <div>
-      <h1>place holder for footer</h1>
+      <ul class="nav justify-content-end">
+        <li class="nav-item">
+          <a
+            class="nav-link active"
+            href="https://www.instagram.com/_takeabao/"
+          >
+            ig icon ph
+          </a>
+        </li>
+        <li class="nav-item">
+          <a
+            class="nav-link active"
+            href="https://www.justgiving.com/crowdfunding/TakeaBao?utm_term=z2xyP8dk5"
+          >
+            just giving icon ph
+          </a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link active" href="/FAQs">
+            FAQs
+          </a>
+        </li>
+      </ul>
     </div>
   );
 };
