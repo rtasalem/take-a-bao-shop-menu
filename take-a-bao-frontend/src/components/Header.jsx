@@ -9,12 +9,6 @@ import "bootstrap/dist/css/bootstrap.min.css";
 const Header = () => {
   return (
     <Navbar expand="lg" className="bg-body-tertiary">
-      <link rel="preconnect" href="https://fonts.googleapis.com" />
-      <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-      <link
-        href="https://fonts.googleapis.com/css2?family=Mr+Dafoe&display=swap"
-        rel="stylesheet"
-      ></link>
       <Container fluid>
         <Navbar.Brand href="/">Take A Bao</Navbar.Brand>
         <Navbar.Toggle aria-controls="navbarScroll" />
