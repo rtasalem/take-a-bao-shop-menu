@@ -16,7 +16,7 @@ const Header = () => {
         rel="stylesheet"
       ></link>
       <Container fluid>
-        <Navbar.Brand href="/">take a bao</Navbar.Brand>
+        <Navbar.Brand href="/">Take A Bao</Navbar.Brand>
         <Navbar.Toggle aria-controls="navbarScroll" />
         <Navbar.Collapse id="navbarScroll">
           <Nav
