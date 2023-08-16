@@ -9,7 +9,7 @@ const Footer = () => {
             class="nav-link active"
             href="https://www.instagram.com/_takeabao/"
           >
-            ig icon ph
+            instagram svg goes here
           </a>
         </li>
         <li class="nav-item">
@@ -17,7 +17,7 @@ const Footer = () => {
             class="nav-link active"
             href="https://www.justgiving.com/crowdfunding/TakeaBao?utm_term=z2xyP8dk5"
           >
-            just giving icon ph
+            just giving svg goes here
           </a>
         </li>
         <li class="nav-item">
