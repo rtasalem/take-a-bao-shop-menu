@@ -8,6 +8,7 @@ const Footer = () => {
           <a
             class="nav-link active"
             href="https://www.instagram.com/_takeabao/"
+            target="_blank"
           >
             <svg
               width="31"
@@ -59,6 +60,7 @@ const Footer = () => {
           <a
             class="nav-link active"
             href="https://www.justgiving.com/crowdfunding/TakeaBao?utm_term=z2xyP8dk5"
+            target="_blank"
           >
             <svg
               width="30"
