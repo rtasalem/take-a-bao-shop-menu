@@ -5,10 +5,10 @@ import Nav from "react-bootstrap/Nav";
 import Navbar from "react-bootstrap/Navbar";
 import NavDropdown from "react-bootstrap/NavDropdown";
 import "bootstrap/dist/css/bootstrap.min.css";
-
+import "../styles/Header.css";
 const Header = () => {
   return (
-    <Navbar expand="lg" className="bg-body-tertiary">
+    <Navbar expand="lg" className="header">
       <Container fluid>
         <Navbar.Brand href="/">Take A Bao</Navbar.Brand>
         <Navbar.Toggle aria-controls="navbarScroll" />
