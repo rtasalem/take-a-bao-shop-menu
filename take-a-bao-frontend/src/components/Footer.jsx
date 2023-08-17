@@ -5,6 +5,11 @@ const Footer = () => {
     <div class="footer">
       <ul class="nav justify-content-end">
         <li class="nav-item">
+          <a class="nav-link active" href="/FAQs">
+            FAQs
+          </a>
+        </li>
+        <li class="nav-item">
           <a
             class="nav-link active"
             href="https://www.instagram.com/_takeabao/"
@@ -81,11 +86,6 @@ const Footer = () => {
                 </clipPath>
               </defs>
             </svg>
-          </a>
-        </li>
-        <li class="nav-item">
-          <a class="nav-link active" href="/FAQs">
-            FAQs
           </a>
         </li>
       </ul>
