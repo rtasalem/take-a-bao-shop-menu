@@ -6,11 +6,12 @@ import Navbar from "react-bootstrap/Navbar";
 import NavDropdown from "react-bootstrap/NavDropdown";
 import "bootstrap/dist/css/bootstrap.min.css";
 import "../styles/Header.css";
+
 const Header = () => {
   return (
     <Navbar expand="lg" className="header">
       <Container fluid>
-        <Navbar.Brand href="/">Take A Bao</Navbar.Brand>
+        <Navbar.Brand href="/">take a bao</Navbar.Brand>
         <Navbar.Toggle aria-controls="navbarScroll" />
         <Navbar.Collapse id="navbarScroll">
           <Nav
