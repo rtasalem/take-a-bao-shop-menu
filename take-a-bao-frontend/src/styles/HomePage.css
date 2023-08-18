@@ -1,0 +1,22 @@
+/* colour palette from coolors.co (https://coolors.co/fe5d26-f2c078-faedca-c1dbb3-7ebc89) */
+:root {
+    --giantsorange: #FE5D26;
+    --earthyellow: #F2C078;
+    --dutchwhtie: #FAEDCA;
+    --teagreen: #C1DBB3;
+    --emerald: #7EBC89;
+}
+
+h1 {
+    color: var(--giantsorange);
+    padding: 50px;
+}
+
+h3 {
+    color: var(--emerald);
+}
+
+p {
+    text-align: justify;
+    margin: 80px 250px 0 250px
+}
