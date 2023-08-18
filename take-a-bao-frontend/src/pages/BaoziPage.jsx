@@ -1,7 +1,12 @@
+// import { useParams } from "react-router-dom";
+
+import ListBaoziAPI from "../components/ListBaoziAPI";
+
 const BaoziPage = () => {
   return (
     <div>
-      <h1>baozi page</h1>
+      <h1>Baozi</h1>
+      <ListBaoziAPI />
     </div>
   );
 };
