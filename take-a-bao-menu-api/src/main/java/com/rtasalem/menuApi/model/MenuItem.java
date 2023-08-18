@@ -27,7 +27,7 @@ public class MenuItem {
 	private String itemDescription;
 
 	@DecimalMax(value = "20.00", message = "Menu item price must be less than £20.00 (GBP).")
-	@DecimalMin(value = "1.50", message = "Menu item price must be greater than £1.50 (GBP).")
+	@DecimalMin(value = "1.00", message = "Menu item price must be greater than £1.00 (GBP).")
 	private double itemPrice;
 
 	private boolean suitableForVegetarians;
