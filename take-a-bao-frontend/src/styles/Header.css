@@ -9,6 +9,7 @@
 
 .header {
     background-color: var(--earthyellow);
+    padding: 5px;
 }
 
 .navbar-brand {
@@ -16,19 +17,27 @@
     font-size: 65px;
     padding: 5px;
     font-weight: 500;
-    color: var(--emerald);
+    color: var(--giantsorange);
+}
+
+.navbar-brand:hover {
+    color: var(--dutchwhtie);
 }
 
 .navbar-nav .nav-link {
     font-size: 18px;
-    color: var(--emerald);
+    color: var(--giantsorange);
+}
+
+.nav-link:hover {
+    color: var(--dutchwhtie);
 }
 
 .form-control {
-    border-color: var(--emerald);
+    border-color: var(--giantsorange);
 }
 
 .btn-outline-success {
-    border-color: var(--emerald);
-    color: var(--emerald);
+    border-color: var(--giantsorange);
+    color: var(--giantsorange);
 }

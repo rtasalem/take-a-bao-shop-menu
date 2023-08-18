@@ -11,7 +11,9 @@ const Header = () => {
   return (
     <Navbar expand="lg" className="header">
       <Container fluid>
-        <Navbar.Brand href="/">take a bao</Navbar.Brand>
+        <Navbar.Brand href="/" className="justify-content-center">
+          take a bao
+        </Navbar.Brand>
         <Navbar.Toggle aria-controls="navbarScroll" />
         <Navbar.Collapse id="navbarScroll">
           <Nav
@@ -19,7 +21,7 @@ const Header = () => {
             style={{ maxHeight: "100px" }}
             navbarScroll
           >
-            <Nav.Link href="/about-us">About Us</Nav.Link>
+            <Nav.Link href="/events">Events</Nav.Link>
             <NavDropdown title="Menu" id="navbarScrollingDropdown">
               <NavDropdown.Item href="/baozi">Baozi</NavDropdown.Item>
               <NavDropdown.Item href="/sides">Sides</NavDropdown.Item>
