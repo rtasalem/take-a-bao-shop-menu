@@ -64,4 +64,9 @@ public class MenuItemService {
 		}
 		menuItemRepo.deleteById(itemId);
 	}
+
+	public List<MenuItem> findMenuItemsByNameOrDescription(String searchTerm) {
+		return menuItemRepo.findByItemNameContainsIgnoreCaseOrItemDescriptionContainsIgnoreCase(searchTerm, searchTerm);
+	}
+
 }
