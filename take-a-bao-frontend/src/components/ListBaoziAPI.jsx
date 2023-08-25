@@ -23,23 +23,39 @@ const ListBaoziAPI = () => {
   }, []);
 
   return (
-    <div>
-      <table>
-        <tbody>
-          {baoziList.map((item) => (
-            <tr key={item.itemId}>
-              <td>
-                <BaoziCard
-                  itemName={item.itemName}
-                  itemDescription={item.itemDescription}
-                  itemPrice={item.itemPrice}
-                />
-              </td>
-            </tr>
-          ))}
-        </tbody>
-      </table>
+    <div class="row row-cols-1 row-cols-md-2 g-4">
+      {baoziList.map((item) => (
+        <tr key={item.itemId}>
+          <td>
+            <BaoziCard
+              itemName={item.itemName}
+              itemDescription={item.itemDescription}
+              itemPrice={item.itemPrice}
+            />
+          </td>
+        </tr>
+      ))}
     </div>
   );
 };
 export default ListBaoziAPI;
+
+{
+  /* <div>
+<table>
+  <tbody>
+    {baoziList.map((item) => (
+      <tr key={item.itemId}>
+        <td>
+          <BaoziCard
+            itemName={item.itemName}
+            itemDescription={item.itemDescription}
+            itemPrice={item.itemPrice}
+          />
+        </td>
+      </tr>
+    ))}
+  </tbody>
+</table>
+</div> */
+}
