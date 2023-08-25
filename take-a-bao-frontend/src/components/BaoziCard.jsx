@@ -1,16 +1,20 @@
+import "../styles/BaoziCard.css";
+
 const BaoziCard = ({ itemName, itemDescription, itemPrice }) => {
   return (
-    <div class="col">
-      <div class="card">
+    <div classNameName="card-container">
+      <div className="card">
         <img
-          src="src/images/char-siu-bao.jpg"
-          class="card-img-top"
+          src="./images/char-siu-bao.jpg"
+          className="card-img-to"
           alt="Image of Char Siu Pork Bao (photo taken by [insert name - get info from Claire])"
         />
-        <div class="card-body">
-          <h5 class="card-title">{itemName}</h5>
-          <p class="card-text">{itemDescription}</p>
-          <p class="card-text">£{itemPrice}</p>
+        <div className="card-body">
+          <h5 className="card-title">{itemName}</h5>
+          <p className="item-description">{itemDescription}</p>
+          <p className="item-price">
+            <b>£{itemPrice}</b>
+          </p>
         </div>
       </div>
     </div>

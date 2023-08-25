@@ -39,23 +39,3 @@ const ListBaoziAPI = () => {
   );
 };
 export default ListBaoziAPI;
-
-{
-  /* <div>
-<table>
-  <tbody>
-    {baoziList.map((item) => (
-      <tr key={item.itemId}>
-        <td>
-          <BaoziCard
-            itemName={item.itemName}
-            itemDescription={item.itemDescription}
-            itemPrice={item.itemPrice}
-          />
-        </td>
-      </tr>
-    ))}
-  </tbody>
-</table>
-</div> */
-}
