@@ -2,11 +2,11 @@ import "../styles/Footer.css";
 
 const Footer = () => {
   return (
-    <div class="footer">
-      <ul class="nav justify-content-center">
-        <li class="nav-item">
+    <div className="footer">
+      <ul className="nav justify-content-center">
+        <li className="nav-item">
           <a
-            class="nav-link active"
+            className="nav-link active"
             href="https://www.instagram.com/_takeabao/"
             target="_blank"
           >
@@ -57,9 +57,9 @@ const Footer = () => {
             </svg>
           </a>
         </li>
-        <li class="nav-item">
+        <li className="nav-item">
           <a
-            class="nav-link active"
+            className="nav-link active"
             href="https://www.justgiving.com/crowdfunding/TakeaBao?utm_term=z2xyP8dk5"
             target="_blank"
           >

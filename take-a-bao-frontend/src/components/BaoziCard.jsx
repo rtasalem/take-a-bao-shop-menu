@@ -2,11 +2,11 @@ import "../styles/BaoziCard.css";
 
 const BaoziCard = ({ itemName, itemDescription, itemPrice }) => {
   return (
-    <div classNameName="card-container">
+    <div className="col">
       <div className="card">
         <img
           src="./images/char-siu-bao.jpg"
-          className="card-img-to"
+          className="card-img-top"
           alt="Image of Char Siu Pork Bao (photo taken by [insert name - get info from Claire])"
         />
         <div className="card-body">

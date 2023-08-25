@@ -23,7 +23,7 @@ public class DessertItem {
 	private String dessertName;
 
 	@NotBlank(message = "Dessert item description must not be left blank.")
-	@Size(min = 10, max = 150, message = "Dessert item description must be greater than 10 characters and less than 150 characters.")
+	@Size(min = 10, max = 500, message = "Dessert item description must be greater than 10 characters and less than 500 characters.")
 	private String dessertDescription;
 
 	@DecimalMax(value = "20.00", message = "Dessert item price must be less than £20.00 (GBP).")

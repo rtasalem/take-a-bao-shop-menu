@@ -1,14 +1,14 @@
-.card {
+.col {
     width: 450px;
-    height: auto;
-    margin: 100px;
+    height: 100%;
 }
 
 .item-description,
 .item-price {
-    margin: 5px;
+    margin: 15px;
 }
 
 .item-price {
     text-align: right;
+    color: blue;
 }
