@@ -1,0 +1,14 @@
+.card {
+    width: 450px;
+    height: auto;
+    margin: 100px;
+}
+
+.item-description,
+.item-price {
+    margin: 5px;
+}
+
+.item-price {
+    text-align: right;
+}
