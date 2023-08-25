@@ -9,7 +9,7 @@ import org.springframework.web.bind.MethodArgumentNotValidException;
 import org.springframework.web.bind.annotation.ExceptionHandler;
 import org.springframework.web.bind.annotation.RestControllerAdvice;
 
-import com.rtasalem.menuApi.exception.MenuItemNameExistsException;
+import com.rtasalem.menuApi.exception.ItemNameExistsException;
 import com.rtasalem.menuApi.exception.ResourceNotFoundException;
 
 @RestControllerAdvice
@@ -20,8 +20,8 @@ public class MenuItemControllerAdvice {
 		return ResponseEntity.status(HttpStatus.NOT_FOUND).body(ex.getMessage());
 	}
 
-	@ExceptionHandler(value = MenuItemNameExistsException.class)
-	public ResponseEntity<String> handleMenuItemNameExistsException(MenuItemNameExistsException ex) {
+	@ExceptionHandler(value = ItemNameExistsException.class)
+	public ResponseEntity<String> handleMenuItemNameExistsException(ItemNameExistsException ex) {
 		return ResponseEntity.status(HttpStatus.CONFLICT).body(ex.getMessage());
 	}
 

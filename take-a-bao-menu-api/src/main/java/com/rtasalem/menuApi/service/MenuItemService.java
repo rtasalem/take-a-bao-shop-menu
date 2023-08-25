@@ -5,7 +5,7 @@ import java.util.Optional;
 
 import org.springframework.stereotype.Service;
 
-import com.rtasalem.menuApi.exception.MenuItemNameExistsException;
+import com.rtasalem.menuApi.exception.ItemNameExistsException;
 import com.rtasalem.menuApi.exception.ResourceNotFoundException;
 import com.rtasalem.menuApi.model.MenuItem;
 import com.rtasalem.menuApi.repository.MenuItemRepository;
@@ -36,7 +36,7 @@ public class MenuItemService {
 	public MenuItem createMenuItem(MenuItem menuItem) {
 
 		if (menuItemRepo.existsByItemName(menuItem.getItemName())) {
-			throw new MenuItemNameExistsException(
+			throw new ItemNameExistsException(
 					"A menu item with the name of " + menuItem.getItemName() + " already exists.");
 		}
 		if (menuItem.getItemName().isBlank() || menuItem.getItemName().isEmpty()) {
