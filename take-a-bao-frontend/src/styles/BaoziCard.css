@@ -9,10 +9,10 @@
 
 .item-description,
 .item-price {
-    margin: 5px;
+    margin: 15px;
 }
 
 .item-price {
     text-align: right;
     color: var(--giantsorange);
-}
+  }

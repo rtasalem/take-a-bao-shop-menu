@@ -2,7 +2,7 @@ import "../styles/BaoziCard.css";
 
 const BaoziCard = ({ itemName, itemDescription, itemPrice }) => {
   return (
-    <div classNameName="col">
+    <div className="col">
       <div className="card">
         <img
           src="./images/char-siu-bao.jpg"

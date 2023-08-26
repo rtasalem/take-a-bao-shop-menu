@@ -23,7 +23,7 @@ public class SideItem {
 	private String sideName;
 
 	@NotBlank(message = "Side item description must not be left blank.")
-	@Size(min = 10, max = 150, message = "Side item description must be greater than 10 characters and less than 150 characters.")
+	@Size(min = 10, max = 500, message = "Side item description must be greater than 10 characters and less than 500 characters.")
 	private String sideDescription;
 
 	@DecimalMax(value = "5.00", message = "Side item price must be less than £5.00 (GBP).")
