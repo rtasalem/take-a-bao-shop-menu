@@ -1,6 +1,7 @@
 import axios from "axios";
 import { useEffect, useState } from "react";
 import BaoziCard from "./BaoziCard";
+import "../styles/ListBaoziAPI.css";
 
 const ListBaoziAPI = () => {
   const api = "http://localhost:8088/api/v1/menu-items";
