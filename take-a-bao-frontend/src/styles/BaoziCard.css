@@ -1,6 +1,10 @@
-.col {
-    width: 450px;
-    height: 100%;
+/* colour palette from coolors.co (https://coolors.co/fe5d26-f2c078-faedca-c1dbb3-7ebc89) */
+:root {
+    --giantsorange: #FE5D26;
+    --earthyellow: #F2C078;
+    --dutchwhtie: #FAEDCA;
+    --teagreen: #C1DBB3;
+    --emerald: #7EBC89;
 }
 
 .item-description,
@@ -10,5 +14,5 @@
 
 .item-price {
     text-align: right;
-    color: blue;
-}
+    color: var(--giantsorange);
+  }
