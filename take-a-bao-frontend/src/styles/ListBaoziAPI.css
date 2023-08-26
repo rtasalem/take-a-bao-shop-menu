@@ -1,14 +1,5 @@
-<<<<<<< HEAD
-.row-cols-md-2 .col {
-    width: 75%;
-    max-height: 50%;
-    margin: auto auto 5rem auto;
-    justify-content: center;
-    align-items: center;
-=======
 .row-cols-md-2 {
     width: 80%;
     height: auto;
     margin: auto auto 75px auto;
->>>>>>> 3ec6ace7d61b4d4e9f7a2136b710d2ef689ad152
 }
