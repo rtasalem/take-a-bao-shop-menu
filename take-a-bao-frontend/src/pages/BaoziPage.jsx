@@ -1,5 +1,3 @@
-// import { useParams } from "react-router-dom";
-
 import ListBaoziAPI from "../components/ListBaoziAPI";
 
 const BaoziPage = () => {

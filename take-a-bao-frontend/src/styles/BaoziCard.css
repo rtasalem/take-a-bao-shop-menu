@@ -1,11 +1,10 @@
-.col {
-    width: 450px;
-    height: 100%;
-}
-
 .item-description,
 .item-price {
     margin: 15px;
+}
+
+.item-description {
+    text-align: left;
 }
 
 .item-price {

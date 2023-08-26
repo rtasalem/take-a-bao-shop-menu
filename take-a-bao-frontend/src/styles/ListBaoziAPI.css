@@ -1,0 +1,7 @@
+.row-cols-md-2 .col {
+    width: 75%;
+    max-height: 50%;
+    margin: auto auto 5rem auto;
+    justify-content: center;
+    align-items: center;
+}
