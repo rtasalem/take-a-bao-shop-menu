@@ -6,7 +6,7 @@ import org.springframework.data.jpa.repository.JpaRepository;
 
 import com.rtasalem.menuApi.model.MenuItem;
 
-public interface MenuItemRepository extends JpaRepository<MenuItem, Integer> {
+public interface MenuItemDAO extends JpaRepository<MenuItem, Integer> {
 
 	boolean existsByItemName(String itemName);
 

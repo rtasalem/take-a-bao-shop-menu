@@ -8,14 +8,14 @@ import org.springframework.stereotype.Service;
 import com.rtasalem.menuApi.exception.ItemNameExistsException;
 import com.rtasalem.menuApi.exception.ResourceNotFoundException;
 import com.rtasalem.menuApi.model.MenuItem;
-import com.rtasalem.menuApi.repository.MenuItemRepository;
+import com.rtasalem.menuApi.repository.MenuItemDAO;
 
 @Service
 public class MenuItemService {
 
-	private final MenuItemRepository menuItemRepo;
+	private final MenuItemDAO menuItemRepo;
 
-	public MenuItemService(MenuItemRepository menuItemRepo) {
+	public MenuItemService(MenuItemDAO menuItemRepo) {
 		super();
 		this.menuItemRepo = menuItemRepo;
 	}
