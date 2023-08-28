@@ -10,6 +10,8 @@ public interface MenuItemDAO extends JpaRepository<MenuItem, Integer> {
 
 	boolean existsByItemName(String itemName);
 
+	List<MenuItem> findByItemCategoryContainsIgnoreCase(String itemCategory);
+
 	List<MenuItem> findByItemNameContainsIgnoreCaseOrItemDescriptionContainsIgnoreCase(String itemName,
 			String itemDescription);
 

@@ -30,6 +30,9 @@ public class MenuItem {
 	@DecimalMin(value = "1.00", message = "Menu item price must be greater than £1.00 (GBP).")
 	private double itemPrice;
 
+	@NotBlank(message = "Menu item category should not be left blank. One of the following categories must be listed: main, side, dessert, or drink.")
+	private String itemCategory;
+
 	private boolean suitableForVegetarians;
 
 	public MenuItem() {
@@ -74,6 +77,14 @@ public class MenuItem {
 
 	public void setItemPrice(double itemPrice) {
 		this.itemPrice = itemPrice;
+	}
+
+	public String getItemCategory() {
+		return itemCategory;
+	}
+
+	public void setItemCategory(String itemCategory) {
+		this.itemCategory = itemCategory;
 	}
 
 	public boolean isSuitableForVegetarians() {
