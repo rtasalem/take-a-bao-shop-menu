@@ -1,7 +1,10 @@
+import ListDessertsAPI from "../components/ListDessertsAPI";
+
 const DessertsPage = () => {
   return (
     <div>
-      <h1>desserts page</h1>
+      <h1>Desserts</h1>
+      <ListDessertsAPI />
     </div>
   );
 };
