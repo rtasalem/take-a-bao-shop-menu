@@ -1,32 +1,32 @@
 import axios from "axios";
 import { useEffect, useState } from "react";
-import MenuItemCard from "./MenuItemCard";
 import "../styles/ListMenuItemAPI.css";
+import MenuItemCard from "./MenuItemCard";
 
-const ListBaoziAPI = () => {
+const ListSidesAPI = () => {
   const api = "http://localhost:8088/api/v1/menu-items/category/";
-  const [baoziList, setBaoziList] = useState([]);
+  const [sidesList, setSidesList] = useState([]);
 
-  const loadBaozi = (category) => {
+  const loadSides = (category) => {
     axios
       .get(api + category)
       .then((response) => {
-        console.log("Successfully retrieved list of baozi from REST API.");
-        setBaoziList(response.data);
+        console.log("Successfully retrieved list of sides from REST API.");
+        setSidesList(response.data);
       })
       .catch((error) =>
-        console.log("Unable to retrieve list of baozi from REST API.")
+        console.log("Unable to retrieve list of sides from REST API.")
       );
   };
 
   useEffect(() => {
-    const category = "main";
-    loadBaozi(category);
+    const category = "side";
+    loadSides(category);
   }, []);
 
   return (
     <div className="row row-cols-1 row-cols-md-2 g-4">
-      {baoziList.map((item) => (
+      {sidesList.map((item) => (
         <tr key={item.itemId}>
           <td>
             <MenuItemCard
@@ -40,4 +40,4 @@ const ListBaoziAPI = () => {
     </div>
   );
 };
-export default ListBaoziAPI;
+export default ListSidesAPI;
