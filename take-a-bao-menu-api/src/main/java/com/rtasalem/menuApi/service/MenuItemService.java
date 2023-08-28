@@ -33,6 +33,10 @@ public class MenuItemService {
 		return menuItemOpt.get();
 	}
 
+	public List<MenuItem> findMenuItemByCategory(String itemCategory) {
+		return menuItemRepo.findByItemCategoryContainsIgnoreCase(itemCategory);
+	}
+
 	public MenuItem createMenuItem(MenuItem menuItem) {
 
 		if (menuItemRepo.existsByItemName(menuItem.getItemName())) {

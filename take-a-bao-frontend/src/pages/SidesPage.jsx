@@ -1,7 +1,10 @@
+import ListSidesAPI from "../components/ListSidesAPI";
+
 const SidesPage = () => {
   return (
     <div>
-      <h1>sides page</h1>
+      <h1>Sides</h1>
+      <ListSidesAPI />
     </div>
   );
 };

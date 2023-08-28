@@ -1,6 +1,6 @@
 import "../styles/BaoziCard.css";
 
-const BaoziCard = ({ itemName, itemDescription, itemPrice }) => {
+const MenuItemCard = ({ itemName, itemDescription, itemPrice }) => {
   return (
     <div className="col">
       <div className="card">
@@ -20,4 +20,4 @@ const BaoziCard = ({ itemName, itemDescription, itemPrice }) => {
     </div>
   );
 };
-export default BaoziCard;
+export default MenuItemCard;

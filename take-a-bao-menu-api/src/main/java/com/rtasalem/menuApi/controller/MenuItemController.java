@@ -39,9 +39,14 @@ public class MenuItemController {
 		return ResponseEntity.status(HttpStatus.OK).body(menuItemService.findAllMenuItems());
 	}
 
-	@GetMapping("/{itemId}")
+	@GetMapping("/id/{itemId}")
 	public ResponseEntity<MenuItem> getMenuItemById(@PathVariable int itemId) {
 		return ResponseEntity.status(HttpStatus.OK).body(menuItemService.findMenuItemById(itemId));
+	}
+
+	@GetMapping("/category/{itemCategory}")
+	ResponseEntity<List<MenuItem>> getMenuItemByCategory(@PathVariable String itemCategory) {
+		return ResponseEntity.status(HttpStatus.OK).body(menuItemService.findMenuItemByCategory(itemCategory));
 	}
 
 	@PostMapping
