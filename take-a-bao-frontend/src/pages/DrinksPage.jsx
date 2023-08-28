@@ -1,7 +1,10 @@
+import ListDrinksAPI from "../components/ListDrinksAPI";
+
 const DrinksPage = () => {
   return (
     <div>
-      <h1>drinks page</h1>
+      <h1>Drinks</h1>
+      <ListDrinksAPI />
     </div>
   );
 };
