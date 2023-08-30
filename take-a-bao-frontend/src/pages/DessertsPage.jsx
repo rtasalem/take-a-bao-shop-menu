@@ -3,7 +3,7 @@ import ListDessertsAPI from "../components/ListDessertsAPI";
 const DessertsPage = () => {
   return (
     <div>
-      <h1>Desserts</h1>
+      <h1>DESSERTS</h1>
       <ListDessertsAPI />
     </div>
   );

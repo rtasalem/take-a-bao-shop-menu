@@ -1,0 +1,10 @@
+@font-face {
+    font-family: 'Sceugeus';
+    src: url('/public/fonts/Sceageus.otf') format('opentype');
+    font-weight: normal;
+    font-style: normal;
+}
+
+h1 {
+    font-family: 'Sceugeus';
+}

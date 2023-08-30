@@ -10,9 +10,11 @@ public interface MenuItemDAO extends JpaRepository<MenuItem, Integer> {
 
 	boolean existsByItemName(String itemName);
 
+	boolean existsByItemImage(String itemImage);
+
 	List<MenuItem> findByItemCategoryContainsIgnoreCase(String itemCategory);
 
-	List<MenuItem> findByItemNameContainsIgnoreCaseOrItemDescriptionContainsIgnoreCase(String itemName,
-			String itemDescription);
+	List<MenuItem> findByItemNameContainsIgnoreCaseOrItemDescriptionContainsIgnoreCaseOrItemCategoryContainsIgnoreCase(
+			String itemName, String itemDescription, String itemCategory);
 
 }
