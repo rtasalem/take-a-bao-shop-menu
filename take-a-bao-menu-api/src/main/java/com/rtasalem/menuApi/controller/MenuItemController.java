@@ -69,9 +69,9 @@ public class MenuItemController {
 	}
 
 	@GetMapping("/search")
-	public ResponseEntity<List<MenuItem>> searchMenuItemByNameOrDescription(
+	public ResponseEntity<List<MenuItem>> searchMenuItemByNameOrDescriptionOrCategory(
 			@RequestParam("searchTerm") String searchTerm) {
-		List<MenuItem> menuItems = menuItemService.findMenuItemsByNameOrDescription(searchTerm);
+		List<MenuItem> menuItems = menuItemService.findMenuItemsByNameOrDescriptionOrCategory(searchTerm);
 		if (!menuItems.isEmpty()) {
 			return ResponseEntity.status(HttpStatus.OK).body(menuItems);
 		}

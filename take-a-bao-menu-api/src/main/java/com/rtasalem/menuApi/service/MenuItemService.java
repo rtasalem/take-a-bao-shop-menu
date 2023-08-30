@@ -43,12 +43,6 @@ public class MenuItemService {
 			throw new ItemNameExistsException(
 					"A menu item with the name of " + menuItem.getItemName() + " already exists.");
 		}
-		if (menuItem.getItemName().isBlank() || menuItem.getItemName().isEmpty()) {
-			throw new RuntimeException("Menu item name must not be left blank.");
-		}
-		if (menuItem.getItemDescription().isBlank() || menuItem.getItemDescription().isEmpty()) {
-			throw new RuntimeException("Menu item description must not be left blank.");
-		}
 		return menuItemRepo.save(menuItem);
 	}
 
@@ -69,8 +63,10 @@ public class MenuItemService {
 		menuItemRepo.deleteById(itemId);
 	}
 
-	public List<MenuItem> findMenuItemsByNameOrDescription(String searchTerm) {
-		return menuItemRepo.findByItemNameContainsIgnoreCaseOrItemDescriptionContainsIgnoreCase(searchTerm, searchTerm);
+	public List<MenuItem> findMenuItemsByNameOrDescriptionOrCategory(String searchTerm) {
+		return menuItemRepo
+				.findByItemNameContainsIgnoreCaseOrItemDescriptionContainsIgnoreCaseOrItemCategoryContainsIgnoreCase(
+						searchTerm, searchTerm, searchTerm);
 	}
 
 }

@@ -22,8 +22,6 @@
 .navbar-brand {
     font-family: 'Sceugeus', sans-serif;
     font-size: 65px;
-    padding: 5px;
-    font-weight: 500;
     color: var(--giantsorange);
 }
 
