@@ -90,6 +90,14 @@ public class MenuItem {
 		this.itemCategory = itemCategory;
 	}
 
+	public String getItemImage() {
+		return itemImage;
+	}
+
+	public void setItemImage(String itemImage) {
+		this.itemImage = itemImage;
+	}
+
 	public boolean isSuitableForVegetarians() {
 		return suitableForVegetarians;
 	}
