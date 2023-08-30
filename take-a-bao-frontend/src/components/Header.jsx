@@ -20,13 +20,13 @@ const Header = () => {
             style={{ maxHeight: "100px" }}
             navbarScroll
           >
-            <Nav.Link href="/events">Events</Nav.Link>
             <NavDropdown title="Menu" id="navbarScrollingDropdown">
               <NavDropdown.Item href="/baozi">Baozi</NavDropdown.Item>
               <NavDropdown.Item href="/sides">Sides</NavDropdown.Item>
               <NavDropdown.Item href="/desserts">Desserts</NavDropdown.Item>
-              <NavDropdown.Item href="/drinks">Drinks</NavDropdown.Item>
+              {/* <NavDropdown.Item href="/drinks">Drinks</NavDropdown.Item> */}
             </NavDropdown>
+            <Nav.Link href="/events">Events</Nav.Link>
           </Nav>
           <Form className="d-flex">
             <Form.Control

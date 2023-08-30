@@ -33,6 +33,7 @@ const ListSidesAPI = () => {
               itemName={item.itemName}
               itemDescription={item.itemDescription}
               itemPrice={item.itemPrice}
+              itemImage={item.itemImage}
             />
           </td>
         </tr>

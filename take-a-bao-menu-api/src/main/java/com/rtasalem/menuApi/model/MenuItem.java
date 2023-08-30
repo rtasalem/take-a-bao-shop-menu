@@ -30,8 +30,11 @@ public class MenuItem {
 	@DecimalMin(value = "1.00", message = "Menu item price must be greater than £1.00 (GBP).")
 	private double itemPrice;
 
-	@NotBlank(message = "Menu item category should not be left blank. One of the following categories must be listed: main, side, dessert, or drink.")
+	@NotBlank(message = "Menu item category must not be left blank. One of the following categories must be listed: main, side, dessert, or drink.")
 	private String itemCategory;
+
+	@NotBlank(message = "Menu item image URL must not be left blank.")
+	private String itemImage;
 
 	private boolean suitableForVegetarians;
 
