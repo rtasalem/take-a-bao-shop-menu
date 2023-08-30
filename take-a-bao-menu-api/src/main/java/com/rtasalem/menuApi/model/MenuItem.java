@@ -33,6 +33,9 @@ public class MenuItem {
 	@NotBlank(message = "Menu item category should not be left blank. One of the following categories must be listed: main, side, dessert, or drink.")
 	private String itemCategory;
 
+	@NotBlank(message = "Menu item image URl should not be left blank.")
+	private String itemImage;
+
 	private boolean suitableForVegetarians;
 
 	public MenuItem() {
@@ -85,6 +88,14 @@ public class MenuItem {
 
 	public void setItemCategory(String itemCategory) {
 		this.itemCategory = itemCategory;
+	}
+
+	public String getItemImage() {
+		return itemImage;
+	}
+
+	public void setItemImage(String itemImage) {
+		this.itemImage = itemImage;
 	}
 
 	public boolean isSuitableForVegetarians() {

@@ -1,13 +1,13 @@
-import "../styles/BaoziCard.css";
+import "../styles/MenuItemCard.css";
 
-const MenuItemCard = ({ itemName, itemDescription, itemPrice }) => {
+const MenuItemCard = ({ itemName, itemDescription, itemPrice, itemImage }) => {
   return (
     <div className="col">
       <div className="card">
         <img
-          src="./images/char-siu-bao.jpg"
+          src={itemImage}
           className="card-img-top"
-          alt="Image of Char Siu Pork Bao (photo taken by [insert name - get info from Claire])"
+          alt="Image of ${itemName} Bao (photo taken by [insert name - get info from Claire])"
         />
         <div className="card-body">
           <h5 className="card-title">{itemName}</h5>
