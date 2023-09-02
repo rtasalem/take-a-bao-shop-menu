@@ -33,7 +33,7 @@ public class MenuItem {
 	@NotBlank(message = "Menu item category must not be left blank. One of the following categories must be listed: main, side, dessert, or drink.")
 	private String itemCategory;
 
-	@NotBlank(message = "Menu item image URL must not be left blank.")
+	@NotBlank(message = "Menu item image URL must not be left blank. Please provide the URL.")
 	private String itemImage;
 
 	private boolean suitableForVegetarians;
@@ -42,11 +42,13 @@ public class MenuItem {
 		super();
 	}
 
-	public MenuItem(String itemName, String itemDescription, double itemPrice, boolean suitableForVegetarians) {
+	public MenuItem(String itemName, String itemDescription, double itemPrice, String itemCategory, String itemImage, boolean suitableForVegetarians) {
 		super();
 		this.itemName = itemName;
 		this.itemDescription = itemDescription;
 		this.itemPrice = itemPrice;
+		this.itemCategory = itemCategory;
+		this.itemImage = itemImage;
 		this.suitableForVegetarians = suitableForVegetarians;
 	}
 

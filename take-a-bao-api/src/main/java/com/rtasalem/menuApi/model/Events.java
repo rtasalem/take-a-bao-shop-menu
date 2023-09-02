@@ -23,15 +23,19 @@ public class Events {
 	@NotBlank(message = "Event description must not be left blank.")
 	@Size(min = 25, max = 1000, message = "Event description must be greater than 25 characters and less than 1000 characters.")
 	private String eventDescription;
+	
+	@NotBlank(message = "Event image URL must not be left blank. Please provide the URL.")
+	private String eventImage;
 
 	public Events() {
 		super();
 	}
 
-	public Events(String eventTitle, String eventDescription) {
+	public Events(String eventTitle, String eventDescription, String eventImage) {
 		super();
 		this.eventTitle = eventTitle;
 		this.eventDescription = eventDescription;
+		this.eventImage = eventImage;
 	}
 
 	public int getEventId() {
@@ -56,6 +60,14 @@ public class Events {
 
 	public void setEventDescription(String eventDescription) {
 		this.eventDescription = eventDescription;
+	}
+
+	public String getEventImage() {
+		return eventImage;
+	}
+
+	public void setEventImage(String eventImage) {
+		this.eventImage = eventImage;
 	}
 
 }
