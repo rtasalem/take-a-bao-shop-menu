@@ -14,4 +14,4 @@ React
 ## Learning Milestones
 This project further exposed me to the Bootstrap framework and how to implement it within React. I also using Figma to create the social media icons for the Instagram and Just Giving pages, which can be seen along the footer of the website. 
 ## Getting Started
-After cloning the repository, follow the instructions in the README.md files for the take-a-bao-api and take-a-bap-frontend React application.
+After cloning the repository, import the take-a-bao-api as a Maven project and run it as a Spring Boot Application. The instructions for running the take-a-bao-frontend React application can be found in a dedicated [README.md](https://github.com/rtasalem/take-a-bao-shop-menu/blob/main/take-a-bao-frontend/README.md) file.
