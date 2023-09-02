@@ -1,4 +1,4 @@
-# Take A Bao: Shop Menu 👩🏻‍🍳
+# Take A Bao 👩🏻‍🍳🔪
 ### Acknowledgements
 Full credit and a massive thank you for the inspiration behind this project (and that includes the _genius_ name) goes to my very talented close friend, Claire H. I dedicate this project to her in the hopes that I'll get a lifetime discount on her homemade bao. If you want to find out more about Claire's fundraising work, check out the Take A Bao [Instragram](https://www.instagram.com/_takeabao/) and [Just Giving](https://www.justgiving.com/crowdfunding/TakeaBao?utm_term=z2xyP8dk5) pages.
 ## Background
