@@ -1,4 +1,4 @@
-# Take A Bao V1.0: Read-Only Shop Menu 👩🏻‍🍳🤤
+# Take A Bao: Read-Only Shop Menu 👩🏻‍🍳🤤
 ### Acknowledgements
 Full credit and a massive thank you for the inspiration behind this project goes to my very talented close friend, Claire Huang. I dedicate this project to her in the hopes that I'll get a lifetime discount on her homemade bao. If you want to find out more about Claire's fundraising work, check out the Take A Bao [Instragram](https://www.instagram.com/_takeabao/) and [Just Giving](https://www.justgiving.com/crowdfunding/TakeaBao?utm_term=z2xyP8dk5) pages. Photography for the website by Claire Huang and Rana Salem. 
 ### Just A Heads-Up
