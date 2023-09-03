@@ -15,6 +15,7 @@ public class MenuItemService {
 
 	private final MenuItemDAO menuItemRepo;
 
+	// Constructor injection
 	public MenuItemService(MenuItemDAO menuItemRepo) {
 		super();
 		this.menuItemRepo = menuItemRepo;
