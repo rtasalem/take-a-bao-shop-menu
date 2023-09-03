@@ -10,8 +10,11 @@ import SidesPage from './pages/SidesPage';
 import DessertsPage from './pages/DessertsPage';
 import DrinksPage from './pages/DrinksPage';
 import Footer from './components/Footer';
+import { useState } from 'react';
 
 function App() {
+  const [searchResults, setSearchResults] = useState([]);
+
   return (
     <div className="App">
       <Header />
