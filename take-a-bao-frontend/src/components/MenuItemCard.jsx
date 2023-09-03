@@ -7,7 +7,7 @@ const MenuItemCard = ({ itemName, itemDescription, itemPrice, itemImage }) => {
         <img
           src={itemImage}
           className="card-img-top"
-          alt="Photo taken by [insert name - get info from Claire])"
+          alt="Photography by Claire Huang and Rana Salem."
         />
         <div className="card-body">
           <h5 className="card-title">{itemName}</h5>
