@@ -29,6 +29,7 @@ public class MenuItemController {
 
 	private final MenuItemService menuItemService;
 
+	// Using constructor injection
 	public MenuItemController(MenuItemService menuItemService) {
 		super();
 		this.menuItemService = menuItemService;
