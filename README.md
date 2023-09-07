@@ -24,4 +24,4 @@ Take A Bao is a pop-up bao bar founded by my close friend, Claire. When Claire f
 ## Learning Milestones
 This project further exposed me to the Bootstrap framework and how to implement it within React and to further customise the styling. It was through this project that I also further developed my understanding of well-structured, sophisticated documentation. 
 ## Getting Started
-After cloning the repository, import the take-a-bao-api as a Maven project and run it as a Spring Boot Application. The instructions for running the take-a-bao-frontend React application can be found in a dedicated [README.md](https://github.com/rtasalem/take-a-bao-shop-menu/blob/main/take-a-bao-frontend/README.md) file.
+After cloning the repository, import the take-a-bao-api as a Maven project and run it as a Spring Boot Application. The instructions for running the take-a-bao-frontend React application can be found in a dedicated [README.md](https://github.com/rtasalem/take-a-bao-shop-menu/blob/main/take-a-bao-frontend/README.md) file in this repository.
