@@ -4,7 +4,7 @@ import "../styles/MenuItemPage.css";
 const BaoziPage = () => {
   return (
     <div>
-      <h1>BAOZI</h1>
+      <h1>baozi</h1>
       <ListBaoziAPI />
     </div>
   );

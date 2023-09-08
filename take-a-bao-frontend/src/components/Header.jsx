@@ -26,19 +26,11 @@ const Header = () => {
               <NavDropdown.Item href="/baozi">Baozi</NavDropdown.Item>
               <NavDropdown.Item href="/sides">Sides</NavDropdown.Item>
               <NavDropdown.Item href="/desserts">Desserts</NavDropdown.Item>
+              {/* Drinks page has been commented out as these were not added to the menu for this project. */}
               {/* <NavDropdown.Item href="/drinks">Drinks</NavDropdown.Item> */}
             </NavDropdown>
-            {/* <Nav.Link href="/events">Events</Nav.Link> */}
+            <Nav.Link href="/events">Events</Nav.Link>
           </Nav>
-          {/* <Form className="d-flex">
-            <Form.Control
-              type="search"
-              placeholder="Have a look around!"
-              className="me-2"
-              aria-label="Search"
-            />
-            <Button variant="outline-success">Search</Button>
-          </Form> */}
         </Navbar.Collapse>
       </Container>
     </Navbar>

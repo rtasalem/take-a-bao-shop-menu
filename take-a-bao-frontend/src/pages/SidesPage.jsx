@@ -3,7 +3,7 @@ import ListSidesAPI from "../components/ListSidesAPI";
 const SidesPage = () => {
   return (
     <div>
-      <h1>SIDES</h1>
+      <h1>sides</h1>
       <ListSidesAPI />
     </div>
   );

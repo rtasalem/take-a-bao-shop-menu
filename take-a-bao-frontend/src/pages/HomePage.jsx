@@ -3,7 +3,7 @@ import "../styles/HomePage.css";
 const HomePage = () => {
   return (
     <div>
-      <h1>welcome to TAKE A BAO</h1>
+      <h1>hello!</h1>
       <h3>Glasgow-based Pop-Up Bao Bar & Fundraising Platform</h3>
       <p>
         Welcome to Take A Bao! - a delightful convergence of culinary passion,
