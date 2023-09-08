@@ -14,7 +14,7 @@ Take A Bao is a pop-up bao bar founded by my close friend, Claire. When Claire f
 - The frontend was developed using the React. This allowed for intuitive development via components which are readily reused throughout the application to reduce repititive code. 
 
 **Bootstrap:**
-- The majority of the styling for the website was achieved via [Bootstrap](https://getbootstrap.com/). Bootstrap was chosen for it's wide recognition and also for it's responsive design e.g. styling which maintains itself when viewed from different screen sizes. 
+- The majority of the styling for the website was achieved via [Bootstrap](https://getbootstrap.com/). Bootstrap was chosen for it's wide recognition and also for it's responsive design i.e. styling that remains consistent when viewed from different screen sizes. 
 
 **Figma:**
 - Figma was used to create SVGs (scalable vector graphics) of the Instagram and JustGiving icons that are seen along the Footer of the React applicaiton. SVGs allow for higher quality when rendered through React.
