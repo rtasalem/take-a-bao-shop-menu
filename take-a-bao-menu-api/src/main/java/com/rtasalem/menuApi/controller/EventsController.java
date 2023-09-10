@@ -39,6 +39,11 @@ public class EventsController {
 		return ResponseEntity.status(HttpStatus.OK).body(eventsService.findAllEvents());
 	}
 	
+	@GetMapping("id/{eventId}")
+	public ResponseEntity<Events> getEventById(@PathVariable int eventId) {
+		return ResponseEntity.status(HttpStatus.OK).body(eventsService.findEventById(eventId));
+	}
+	
 	@PostMapping
 	public ResponseEntity<Events> addNewEvent(@Valid @RequestBody Events event) {
 		eventsService.createEvent(event);

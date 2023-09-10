@@ -1,6 +1,7 @@
 package com.rtasalem.menuApi.service;
 
 import java.util.List;
+import java.util.Optional;
 
 import org.springframework.stereotype.Service;
 
@@ -22,6 +23,15 @@ public class EventsService {
 
 	public List<Events> findAllEvents() {
 		return eventsRepo.findAll();
+	}
+	
+	public Events findEventById(int eventId) {
+		
+		Optional<Events> eventOpt = eventsRepo.findById(eventId);
+		if (eventOpt.isEmpty()) {
+			throw new ResourceNotFoundException("Event with ID of " + eventId + " does not exist.");
+		}
+		return eventOpt.get();
 	}
 	
 	public Events createEvent(Events event) {
