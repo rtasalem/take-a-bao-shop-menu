@@ -10,6 +10,9 @@ Take A Bao is a pop-up bao bar founded by my close friend, Claire. When Claire f
 - The API was built using RESTful architecture, adopting the following Spring Boot dependencies: Spring Boot DevTools, Spring Web, Spring Reactive Web, Spring Data JPA, H2, Validation.
 - CRUD operations are present throughout the API and have been fully tested via Postman (see below for the API documentation).
 
+**Postman:**
+- Postman is an application that is used to test the functionality of an API. In this case it was used to ensure that the functionality of the HTTP requests for this RESTful API were performing as expected. 
+
 **React:**
 - The frontend was developed using the React. This allowed for intuitive development via components which are readily reused throughout the application to reduce repititive code. 
 
@@ -19,8 +22,7 @@ Take A Bao is a pop-up bao bar founded by my close friend, Claire. When Claire f
 **Figma:**
 - Figma was used to create SVGs (scalable vector graphics) of the Instagram and JustGiving icons that are seen along the Footer of the React applicaiton. SVGs allow for higher quality when rendered through React.
 ## Documentation
-- NOTE: Link Postman documentation here. 
-- NOTE: Implement Swagger Documentation for the API and discuss this here.
+API documentation was created using Postman and can be found [here](https://documenter.getpostman.com/view/28285986/2s9Xy3try6).
 ## Learning Milestones
 This project further exposed me to the Bootstrap framework and how to implement it within React and to further customise the styling. It was through this project that I also further developed my understanding of well-structured, sophisticated documentation. 
 ## Getting Started
