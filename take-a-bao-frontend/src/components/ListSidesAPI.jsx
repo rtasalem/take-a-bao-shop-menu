@@ -4,7 +4,7 @@ import "../styles/ListMenuItemAPI.css";
 import MenuItemCard from "./MenuItemCard";
 
 const ListSidesAPI = () => {
-  const api = "http://localhost:8088/api/v1/menu-items/category/";
+  const api = "http://localhost:8080/api/v1/menu-items/category/";
   const [sidesList, setSidesList] = useState([]);
 
   const loadSides = (category) => {

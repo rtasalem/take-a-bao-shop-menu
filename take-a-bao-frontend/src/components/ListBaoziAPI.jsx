@@ -4,7 +4,7 @@ import MenuItemCard from "./MenuItemCard";
 import "../styles/ListMenuItemAPI.css";
 
 const ListBaoziAPI = () => {
-  const api = "http://localhost:8088/api/v1/menu-items/category/";
+  const api = "http://localhost:8080/api/v1/menu-items/category/";
   const [baoziList, setBaoziList] = useState([]);
 
   const loadBaozi = (category) => {

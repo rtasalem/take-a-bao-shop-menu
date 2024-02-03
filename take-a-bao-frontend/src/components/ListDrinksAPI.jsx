@@ -3,7 +3,7 @@ import { useEffect, useState } from "react";
 import MenuItemCard from "./MenuItemCard";
 
 const ListDrinksAPI = () => {
-  const api = "http://localhost:8088/api/v1/menu-items/category/";
+  const api = "http://localhost:8080/api/v1/menu-items/category/";
   const [drinksList, setDrinksList] = useState([]);
 
   const loadDrinks = (category) => {
