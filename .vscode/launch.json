@@ -1,0 +1,14 @@
+{
+    "configurations": [
+        {
+            "type": "java",
+            "name": "Spring Boot-TakeABaoMenuApiApplication<take-a-bao-menu-api>",
+            "request": "launch",
+            "cwd": "${workspaceFolder}",
+            "mainClass": "com.rtasalem.menuApi.TakeABaoMenuApiApplication",
+            "projectName": "take-a-bao-menu-api",
+            "args": "",
+            "envFile": "${workspaceFolder}/.env"
+        }
+    ]
+}

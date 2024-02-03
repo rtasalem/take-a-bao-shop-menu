@@ -1,0 +1,22 @@
+#!/bin/bash
+set -e
+
+# Navigate to REST API (take-a-bao-menu-api)
+cd take-a-bao-menu-api
+
+# Build & run API as a Spring Boot Application
+mvn clean install -DskipTests
+mvn spring-boot:run &
+
+# Navigate to React app (take-a-bao-frontend)
+cd ..
+cd take-a-bao-frontend
+
+# Install dependencies
+npm i
+
+# Start React app
+npm start
+
+# Open localhost:3000 in the browser
+Open http://localhost:3000
